@@ -42,3 +42,10 @@ function endGame() {
 
 loadQuestion();
 nextButton.addEventListener("click", checkAnswer);
+
+answerInput.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        checkAnswer();
+    }
+});
+
